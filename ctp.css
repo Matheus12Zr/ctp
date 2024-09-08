@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(to bottom right, #1D4221, #2A7439);
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    transition: background-color 1s ease-in-out;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(29, 66, 33, 0.9);
+    z-index: 1000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(29, 66, 33, 0.9);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+main {
+    margin-top: 100px; /* Ajusta para o espaço do header */
+    margin-bottom: 60px; /* Ajusta para o espaço do footer */
+    text-align: center;
+    max-width: 90%;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.passo {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.passo.ativo {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+img {
+    max-width: 90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #64A712;
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #87C734;
+}
